@@ -1,0 +1,1059 @@
+main:
+
+<main>:
+    rows: 2
+    
+    BoxLayout:
+        size_hint: 1, 0.1
+        orientation: "horizontal"
+        size: root.width, root.height
+        Button: 
+            text: "restart"
+            on_press: root.reset()
+        Button:
+            text: "new game"
+            on_press: root.new_game()
+        Button:
+            text: "show answer"
+            on_press: root.show_answer()
+        Label: 
+            id: winning_score
+            text: root.winning_score
+            font_size: 40
+            color: (0,0,1,1)
+        Label:
+            id: score_label
+            text: root.score_label
+            font_size: 40
+            color: (0,0,1,1)
+    
+    GridLayout:
+        
+        cols: 5
+        rows:5
+        
+        padding: ((root.width-(root.height*0.9))/2), 0, ((root.width-(root.height*0.9))/2), 0
+        
+        Button:
+            text: "1"
+            size_hint: 1,1.2
+            opacity: 0
+            on_press: root.on_button_click1()
+        Button:
+            size_hint: 1,1.2
+            opacity: 0
+            on_press: root.on_button_click2()
+        Button:
+            text: "3"
+            size_hint: 1,1.2
+            opacity: 0
+            on_press: root.on_button_click3()
+        Button:
+            text: "4"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click4()
+        Button:
+            text: "5"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click5()
+        Button:
+            text: "6"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click6()
+        Button:
+            text: "7"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click7()
+        Button:
+            text: "8"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click8()
+        Button:
+            text: "9"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click9()
+        Button:
+            text: "10"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click10()
+        Button:
+            text: "11"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click11()
+        Button:
+            text: "12"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click12()
+        Button:
+            text: "13"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click13()
+        Button:
+            text: "14"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click14()
+        Button:
+            text: "15"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click15()
+        Button:
+            text: "16"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click16()
+        Button:
+            text: "17"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click17()
+        Button:
+            text: "18"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click18()
+        Button:
+            text: "19"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click19()
+        Button:
+            text: "20"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click20()
+        Button:
+            text: "21"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click21()
+        Button:
+            text: "22"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click22()
+        Button:
+            text: "23"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click23()
+        Button:
+            text: "24"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click24()
+        Button:
+            text: "25"
+            size_hint: 1,1.2
+            opacity: 0
+
+            
+            on_press: root.on_button_click25()
+
+
+        #########################################################         make road grid          #####################################
+        
+        Image:
+            id: horizontal1
+            source: root.horizontal1
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal2
+            source: root.horizontal2           
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal3
+            source: root.horizontal3
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal4
+            source: root.horizontal4
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal5
+            source: root.horizontal5
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal6
+            source: root.horizontal6
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal7
+            source: root.horizontal7
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal8
+            source: root.horizontal8
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal9
+            source: root.horizontal9
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal10
+            source: root.horizontal10         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal11
+            source: root.horizontal11         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal12
+            source: root.horizontal12         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal13
+            source: root.horizontal13         
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal14
+            source: root.horizontal14         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal15
+            source: root.horizontal15         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal16
+            source: root.horizontal16         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal17
+            source: root.horizontal17         
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal18
+            source: root.horizontal18         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal19
+            source: root.horizontal19         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: horizontal20
+            source: root.horizontal20         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical1
+            source: root.vertical1
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical2
+            source: root.vertical2
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical3
+            source: root.vertical3
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical4
+            source: root.vertical4
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical5
+            source: root.vertical5
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical6
+            source: root.vertical6
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical7
+            source: root.vertical7
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical8
+            source: root.vertical8
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical9
+            source: root.vertical9
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical10
+            source: root.vertical10
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical11
+            source: root.vertical11
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical12
+            source: root.vertical12
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical13
+            source: root.vertical13
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical14
+            source: root.vertical14
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical15
+            source: root.vertical15
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical16
+            source: root.vertical16
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical17
+            source: root.vertical17
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical18
+            source: root.vertical18
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical19
+            source: root.vertical19
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: vertical20
+            source: root.vertical20
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+           
+
+
+
+        ######################################      draw path     ###################################
+
+        Image:
+            id: pathhorizontal1
+            source: root.pathhorizontal1
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathhorizontal2
+            source: root.pathhorizontal2           
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathhorizontal3
+            source: root.pathhorizontal3
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathhorizontal4
+            source: root.pathhorizontal4
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathhorizontal5
+            source: root.pathhorizontal5
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathhorizontal6
+            source: root.pathhorizontal6
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal7
+            source: root.pathhorizontal7
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal8
+            source: root.pathhorizontal8
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathhorizontal9
+            source: root.pathhorizontal9
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal10
+            source: root.pathhorizontal10         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal11
+            source: root.pathhorizontal11         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal12
+            source: root.pathhorizontal12         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathhorizontal13
+            source: root.pathhorizontal13         
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal14
+            source: root.pathhorizontal14         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal15
+            source: root.pathhorizontal15         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal16
+            source: root.pathhorizontal16         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathhorizontal17
+            source: root.pathhorizontal17         
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal18
+            source: root.pathhorizontal18         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal19
+            source: root.pathhorizontal19         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathhorizontal20
+            source: root.pathhorizontal20         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical1
+            source: root.pathvertical1
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical2
+            source: root.pathvertical2
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical3
+            source: root.pathvertical3
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical4
+            source: root.pathvertical4
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical5
+            source: root.pathvertical5
+            
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical6
+            source: root.pathvertical6
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical7
+            source: root.pathvertical7
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical8
+            source: root.pathvertical8
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathvertical9
+            source: root.pathvertical9
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical10
+            source: root.pathvertical10
+            
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical11
+            source: root.pathvertical11
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical12
+            source: root.pathvertical12
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathvertical13
+            source: root.pathvertical13
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical14
+            source: root.pathvertical14
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical15
+            source: root.pathvertical15
+            
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical16
+            source: root.pathvertical16
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: pathvertical17
+            source: root.pathvertical17
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical18
+            source: root.pathvertical18
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical19
+            source: root.pathvertical19
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: pathvertical20
+            source: root.pathvertical20
+            
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+
+############################################################    draw computer path   ###########################################
+        Image:
+            id: cpathhorizontal1
+            source: root.cpathhorizontal1
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathhorizontal2
+            source: root.cpathhorizontal2           
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathhorizontal3
+            source: root.cpathhorizontal3
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathhorizontal4
+            source: root.cpathhorizontal4
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*4)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathhorizontal5
+            source: root.cpathhorizontal5
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathhorizontal6
+            source: root.cpathhorizontal6
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal7
+            source: root.cpathhorizontal7
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal8
+            source: root.cpathhorizontal8
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*3)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathhorizontal9
+            source: root.cpathhorizontal9
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal10
+            source: root.cpathhorizontal10         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal11
+            source: root.cpathhorizontal11         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal12
+            source: root.cpathhorizontal12         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathhorizontal13
+            source: root.cpathhorizontal13         
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal14
+            source: root.cpathhorizontal14         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal15
+            source: root.cpathhorizontal15         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal16
+            source: root.cpathhorizontal16         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*1)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathhorizontal17
+            source: root.cpathhorizontal17         
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal18
+            source: root.cpathhorizontal18         
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal19
+            source: root.cpathhorizontal19         
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathhorizontal20
+            source: root.cpathhorizontal20         
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))+((root.height*0.9)/5)/2),(((root.height*0.9)/5)*0)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical1
+            source: root.cpathvertical1
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical2
+            source: root.cpathvertical2
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical3
+            source: root.cpathvertical3
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical4
+            source: root.cpathvertical4
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical5
+            source: root.cpathvertical5
+            
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*4)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical6
+            source: root.cpathvertical6
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical7
+            source: root.cpathvertical7
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical8
+            source: root.cpathvertical8
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathvertical9
+            source: root.cpathvertical9
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical10
+            source: root.cpathvertical10
+            
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*3)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical11
+            source: root.cpathvertical11
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical12
+            source: root.cpathvertical12
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathvertical13
+            source: root.cpathvertical13
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical14
+            source: root.cpathvertical14
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical15
+            source: root.cpathvertical15
+            
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*2)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical16
+            source: root.cpathvertical16
+            
+            pos: (((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: cpathvertical17
+            source: root.cpathvertical17
+            
+            pos: (((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical18
+            source: root.cpathvertical18
+            
+            pos: (((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical19
+            source: root.cpathvertical19
+            
+            pos: (((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+        Image:
+            id: cpathvertical20
+            source: root.cpathvertical20
+            
+            pos: (((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2))),((((root.height*0.9)/5)*1)-((root.height*0.9)/5)/2)
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+
+
+############################################################   draw buildings     ###################################
+
+
+        Image:
+            id: image101
+            source: 'house.png'
+            pos: ((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*4))
+            
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image102
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*4))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image103
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*4))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image104
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*4))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image105
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*4))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image106
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*3))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image107
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*3))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image108
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*3))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image109
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*3))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1010
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*3))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1011
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*2))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1012
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*2))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1013
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*2))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1014
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*2))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1015
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*2))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1016
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*1))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1017
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*1))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1018
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*1))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1019
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*1))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1020
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*1))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1021
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*0)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*0))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1022
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*1)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*0))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1023
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*2)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*0))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1024
+            source: 'shop.png'
+            pos: ((((root.height*0.9)/5)*3)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*0))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+        Image:
+            id: image1025
+            source: 'school.png'
+            pos: ((((root.height*0.9)/5)*4)+((root.width-(root.height*0.9))/2)),((((root.height*0.9)/5)*0))
+            size: ((root.height*0.9)/5),((root.height*0.9)/5)
+
+
